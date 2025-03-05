@@ -1,4 +1,4 @@
-# LocalCart - A hub for local and online vendors. 
+# LocalCart - A hub for local and online vendors. (IDEA ONLY)
 
 **Overview**  
 LocalCart is a full-stack web application that enables multiple vendors to list their products, customers to browse and purchase items, and a superadmin to manage the platform. The system includes location-based filtering to help users find nearby shops.
