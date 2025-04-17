@@ -1,3 +1,126 @@
+localcart-frontend/
+│── public/               # Static assets (index.html, images, favicons)
+│── src/
+│   ├── assets/           # Images, icons, fonts, etc.
+│   ├── components/       # Reusable components (Navbar, Footer, Buttons)
+│   ├── pages/            # Page components (Home, Shop, Cart, Profile)
+│   ├── hooks/            # Custom hooks (useAuth, useGeoLocation)
+│   ├── context/          # Context API (Auth, Cart, Shop)
+│   ├── redux/            # Redux store, slices, actions (if using Redux)
+│   ├── services/         # API calls (Axios functions)
+│   ├── utils/            # Helper functions (formatPrice, geoUtils)
+│   ├── routes/           # App routes using React Router
+│   ├── styles/           # Tailwind config & global styles
+│   ├── App.js            # Main component
+│   ├── index.js          # React entry point
+│   ├── tailwind.config.js # Tailwind CSS config
+│   ├── postcss.config.js  # Tailwind postCSS config
+│── .env                  # Environment variables (API keys, URLs)
+│── package.json          # Dependencies & scripts
+│── README.md             # Project documentation
+
+📌 Explanation of Key Folders
+📂 1. components/ – Reusable UI Components
+✅ Example:
+
+css
+Copy
+Edit
+components/
+│── Navbar.jsx
+│── Footer.jsx
+│── ShopCard.jsx    # Card to show a shop
+│── ProductCard.jsx # Card to show a product
+│── Button.jsx      # Reusable button component
+│── Loader.jsx      # Loading spinner
+📂 2. pages/ – Main Pages
+✅ Example:
+
+bash
+Copy
+Edit
+pages/
+│── Home.jsx       # Landing page
+│── Shops.jsx      # List of nearby shops
+│── ShopDetail.jsx # Single shop & products
+│── Cart.jsx       # Shopping cart
+│── Checkout.jsx   # Checkout page
+│── Orders.jsx     # User order history
+│── Profile.jsx    # User profile page
+│── Login.jsx      # Authentication page
+📂 3. context/ – Global State Management (Context API)
+✅ If you are not using Redux, you can manage global states using React Context.
+
+bash
+Copy
+Edit
+context/
+│── AuthContext.js   # User authentication state
+│── CartContext.js   # Cart state management
+│── ShopContext.js   # Store nearby shops data
+📂 4. redux/ – State Management (if using Redux Toolkit)
+✅ If you are using Redux Toolkit, structure it like this:
+
+bash
+Copy
+Edit
+redux/
+│── store.js         # Redux store configuration
+│── slices/
+│   │── authSlice.js # User authentication state
+│   │── cartSlice.js # Cart state management
+│   │── shopSlice.js # Shop listings
+📂 5. services/ – API Calls
+✅ Handle all Axios API calls in one place for better maintainability.
+
+bash
+Copy
+Edit
+services/
+│── authService.js   # Login, Register, Logout
+│── shopService.js   # Fetch nearby shops
+│── productService.js # Fetch products from a shop
+│── orderService.js   # Place & track orders
+📂 6. hooks/ – Custom Hooks
+✅ Custom hooks for modular logic.
+
+graphql
+Copy
+Edit
+hooks/
+│── useAuth.js         # Handles authentication logic
+│── useGeoLocation.js  # Get user's current location
+│── useFetch.js        # Reusable fetch API hook
+
+📂 7. routes/ – App Routing (React Router)
+✅ Centralized React Router setup.
+routes/
+│── AppRoutes.jsx  # Handles all routes
+
+📂 8. utils/ – Helper Functions
+✅ Store reusable functions here.
+utils/
+│── formatPrice.js  # Formats price (e.g., ₹999 → ₹999.00)
+│── geoUtils.js     # Converts lat/lng to readable address
+│── orderUtils.js   # Handles order status logic
+
+📂 9. styles/ – Global Styling
+✅ Tailwind config & global styles.
+styles/
+│── global.css        # Global Tailwind CSS styles
+│── tailwind.config.js # Tailwind custom configurations
+
+
+
+
+
+
+
+
+
+
+
+
 📂 Final Optimized Directory Structure with Details:
 
 LOCALCART/
